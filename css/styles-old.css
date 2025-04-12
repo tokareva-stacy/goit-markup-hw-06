@@ -6,12 +6,7 @@
 
 
 
-.header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
-}
 
 
 
@@ -19,26 +14,7 @@
     
 
 
-.header-logo {
-    margin-right: 76px;
-}
 
-
-
-
-
-.contacts-menu-list {
-    gap: 40px;
-}
-
-.contacts-menu-link {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-}
 
 .contacts-menu-link:hover, .contacts-menu-link:focus {
     color: #404BBF;
