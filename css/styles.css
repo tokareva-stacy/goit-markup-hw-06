@@ -68,7 +68,7 @@ img {
 
 @media screen and (min-width: 1158px) {
     .container {
-        max-width: 769px;
+        max-width: 1158px;
         padding: 0 15px;
     }
 }
@@ -207,4 +207,12 @@ img {
     
     }
 
+}
+/* mobile menu */
+
+
+@media screen and (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
 }
