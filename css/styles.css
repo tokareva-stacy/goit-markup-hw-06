@@ -85,11 +85,13 @@ img {
     justify-content: space-between;
 
 }
-
-.header-menu-list,
-.contacts {
-    display: none;
+@media screen and (max-width: 767px) {
+    .header-menu-list,
+    .contacts {
+        display: none;
 }
+}
+
 
 .header-logo {
     font-family: "Raleway", sans-serif;
@@ -167,8 +169,27 @@ img {
     .header-menu-link.current {
         color: #404bbf;
     }
+    .contacts {
+        font-style: normal;
+    }
+    .contacts-menu-list {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        flex-direction: column;
+    }
     
-    
+    .contacts-menu-link {
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.04em;
+        padding: 16px 0;
+        color: #434455;
+    }
+    .contacts-menu-link:hover,
+    .contacts-menu-link:focus {
+        color: #404BBF;
+    }
 }
 
 @media screen and (min-width: 1158px) {
@@ -185,7 +206,7 @@ img {
         line-height: 1.5;
         letter-spacing: 0.02em;
         padding: 24px 0;
-    
+        
     }
 
 }
@@ -326,4 +347,19 @@ img {
 
 .soc-media-mobile-icon {
     fill: #f4f4fd;
+}
+
+/* hero */
+/* Section 1 */
+.hero {
+    background: #2e2f42;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    max-width: px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+
 }
