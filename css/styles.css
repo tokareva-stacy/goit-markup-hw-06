@@ -198,7 +198,6 @@ img {
     }
     .contacts-menu-list {
         gap: 40px;
-        align-items: center;
         flex-direction: row;
     }
     .contacts-menu-link {
@@ -206,7 +205,6 @@ img {
         line-height: 1.5;
         letter-spacing: 0.02em;
         padding: 24px 0;
-        
     }
 
 }
@@ -353,13 +351,67 @@ img {
 /* Section 1 */
 .hero {
     background: #2e2f42;
-    padding-top: 188px;
-    padding-bottom: 188px;
-    max-width: px;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    max-width: 767px;
     margin: 0 auto;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
 
+}
+.hero-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 216px;
+}
+.hero-button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    width: 169px;
+    height: 56px;
+    display: block;
+    min-width: 169px;
+    border: none;
+    border-radius: 4px;
+    margin: 0 auto;
+    margin-top: 72px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+
+@media screen and (min-width: 768px) {
+    .hero {
+        padding-top: 112px;
+        padding-bottom: 112px;
+        max-width: 1157px;
+    }
+    .hero-title {
+        font-size: 56px;
+        line-height: 1.07;
+        max-width: 496px;
+    }
+    .hero-button {
+        margin-top: 36px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .hero {
+        padding-top: 188px;
+        padding-bottom: 188px;
+        max-width: 1440px;
+    }
+    .hero-button {
+        margin-top: 48px;
+    }
 }
