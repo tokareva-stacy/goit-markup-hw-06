@@ -358,8 +358,12 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
-
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg-mob.jpg);
+}
+@media screen and (min-resolution: 2x) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg-mob-2x.jpg);
+    }
 }
 .hero-title {
     font-weight: 700;
@@ -394,7 +398,14 @@ img {
         padding-top: 112px;
         padding-bottom: 112px;
         max-width: 1157px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg-tab.jpg);
     }
+        @media screen and (min-resolution: 2x) {
+            .hero {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg-tab-2x.jpg);
+            }
+    
+        }
     .hero-title {
         font-size: 56px;
         line-height: 1.07;
@@ -410,8 +421,58 @@ img {
         padding-top: 188px;
         padding-bottom: 188px;
         max-width: 1440px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg-desc.jpg);
     }
+        @media screen and (min-resolution: 2x) {
+            .hero {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg-desc-2x.jpg);
+            }
+    
+        }
     .hero-button {
         margin-top: 48px;
     }
+}
+
+/* Section 2 */
+@media (min-width: 200px) and (max-width: 1157px) {
+
+    .features-icon-wrapper {
+        display: none;
+    }
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+}
+.features {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+.features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+
+@media screen and (min-width: 768px) {
+    .features-list {
+        /* gap: 24px; */
+    }
+    .features-item {
+        flex-basis: calc((100% - 48px) / 2);
+    }
+
+}
+
+@media screen and (min-width: 1158px) {
+
 }
