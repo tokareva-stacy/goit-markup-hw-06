@@ -463,9 +463,6 @@ img {
     flex-wrap: wrap;
     gap: 72px;
 }
-.features-item {
-    
-}
 .features-subtitle {
     font-weight: 700;
     font-size: 36px;
@@ -528,3 +525,126 @@ img {
         line-height: 1.2;
     }
 }
+
+/* Section 3 */
+.team {
+    background: #f4f4fd;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+}
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px;
+}
+.team-item {
+    background-color: #fff;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    width: 100%;
+    border-radius: 0px 0px 4px 4px;
+}
+.team-image {
+    display: block;
+}
+.team-card {
+    padding: 32px 0;
+}
+
+.team-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
+
+.team-item-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #434455;
+    margin-bottom: 8px;
+}
+.soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding: 0 16px;
+}
+
+
+.soc-list-item {
+    width: 40px;
+    height: 40px;
+}
+
+.soc-link {
+    background-color: #4d5ae5;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.soc-link:hover,
+.soc-link:focus {
+    background-color: #404BBF;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.soc-link-icon {
+    fill: #f4f4fd;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+    .team {
+        /* padding-left: 16px;
+        padding-right: 16px; */
+    }
+    .team-list {
+        gap: 64px 24px;
+        justify-content: center;
+        
+    }
+    .team-item {
+        flex-basis: calc((100% - 24px) / 2);
+        max-width: 264px;
+}
+}
+@media screen and (min-width: 1158px) {
+    .team {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .team-list {
+        gap: 24px;
+    }
+    .team-item {
+        flex-basis: calc((100% - 72px) / 4);
+    }
+
+}
+
+
+/* Section 4 */
