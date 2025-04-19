@@ -62,7 +62,7 @@ img {
 
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 769px;
+        max-width: 768px;
     }
 }
 
@@ -81,7 +81,6 @@ img {
 
 .header .container {
     display: flex;
-    align-items: center;
     justify-content: space-between;
 
 }
@@ -125,12 +124,15 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+    .header .container {
+        align-items: center;
+    }
     .burger-btn {
         display: none;
     }
     .header-navigation {
         display: flex;
-        align-items: center;
+        
     }
     .header-logo {
         padding: 24px 0;
@@ -139,7 +141,7 @@ img {
     .header-menu-list {
         display: flex;
         gap: 40px;
-        align-items: center;
+        
     }
     .header-menu-link {
         font-weight: 500;
@@ -174,7 +176,6 @@ img {
     .contacts-menu-list {
         display: flex;
         gap: 12px;
-        align-items: center;
         flex-direction: column;
     }
     
@@ -182,9 +183,9 @@ img {
         font-size: 12px;
         line-height: 1.16;
         letter-spacing: 0.04em;
-        padding: 16px 0;
         color: #434455;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     }
     .contacts-menu-link:hover,
     .contacts-menu-link:focus {
@@ -278,9 +279,11 @@ img {
     line-height: 1.11;
     letter-spacing: 0.04em;
     color: #2e2f42;
-    padding: 24px 0;
     display: block;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-menu-mobile-link.current {
+    color: #404bbf;
 }
 .header-menu-mobile-link:hover,
 .header-menu-mobile-link:focus {
@@ -289,13 +292,13 @@ img {
 .contacts-mobile {
     font-style: normal;
     display: block;
+    margin-bottom: 48px;
 }
 
 .contacts-menu-mobile-list {
     display: flex;
-    gap: 12px;
+    gap: 24px;
     flex-direction: column;
-    margin-bottom: 48px;
 }
 
 .contacts-menu-mobile-link {
@@ -310,6 +313,9 @@ img {
 
 .contacts-menu-mobile-link:hover,
 .contacts-menu-mobile-link:focus {
+    color: #404BBF;
+}
+.contacts-menu-mobile-link.current {
     color: #404BBF;
 }
 .soc-media-mobile-list {
@@ -352,7 +358,7 @@ img {
     background: #2e2f42;
     padding-top: 72px;
     padding-bottom: 72px;
-    max-width: 767px;
+    max-width: 320px;
     margin: 0 auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -362,6 +368,7 @@ img {
 @media screen and (min-resolution: 2x) {
     .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg-mob-2x.jpg);
+        
     }
 }
 .hero-title {
@@ -396,7 +403,7 @@ img {
     .hero {
         padding-top: 112px;
         padding-bottom: 112px;
-        max-width: 1157px;
+        max-width: 768px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg-tab.jpg);
     }
         @media screen and (min-resolution: 2x) {
@@ -419,7 +426,7 @@ img {
     .hero {
         padding-top: 188px;
         padding-bottom: 188px;
-        max-width: 1440px;
+        max-width: 1158px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg-desc.jpg);
     }
         @media screen and (min-resolution: 2x) {
@@ -505,6 +512,9 @@ img {
     .features-item {
         flex-basis: calc((100% - 72px) / 4);
     }
+    .features-item-text {
+        font-weight: 400;
+    }
     
     .features-icon-wrapper {
         display: flex;
@@ -528,7 +538,7 @@ img {
 /* Section 3 */
 .team {
     background: #f4f4fd;
-    padding: 96px 16px;
+    padding: 96px 12px;
 }
 .team-title {
     font-weight: 700;
@@ -550,7 +560,7 @@ img {
 .team-item {
     background-color: #fff;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-    width: 100%;
+    width: 264px;
     border-radius: 0px 0px 4px 4px;
 }
 .team-image {
@@ -995,7 +1005,7 @@ img {
     .footer-container {
         align-items: baseline;
         max-width: 1158px;
-        padding: 0;
+        padding: 15px;
         flex-wrap: nowrap;
         gap: 0;
         justify-content: space-between;
