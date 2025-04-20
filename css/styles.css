@@ -426,7 +426,7 @@ img {
     .hero {
         padding-top: 188px;
         padding-bottom: 188px;
-        max-width: 1158px;
+        max-width: 1440px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg-desc.jpg);
     }
         @media screen and (min-resolution: 2x) {
@@ -1005,7 +1005,8 @@ img {
     .footer-container {
         align-items: baseline;
         max-width: 1158px;
-        padding: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
         flex-wrap: nowrap;
         gap: 0;
         justify-content: space-between;
@@ -1015,7 +1016,6 @@ img {
         min-width: 264px;
         margin-right: 120px;
         text-align: start;
-
     }
 
     .footer-soc-media {
